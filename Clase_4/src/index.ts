@@ -21,17 +21,17 @@ class POO {
         this.parcial3 = _parcial3;
     }
 
-    // public mostrarDatos(): void{
-    //     console.log("El estudiante: " + this.nombre)
-    //     console.log("Codigo: " + this.codigo)
-    //     console.log("Tiene las siguientes notas - Laboratorio: " + this.laboratorio 
-    //         + " Parcial: " + this.parcial
-    //     )
-    // }
+    public mostrarDatos(): void{
+        console.log("El estudiante: " + this.nombre)
+        console.log("Codigo: " + this.codigo)
+        console.log("Tiene las siguientes notas - Laboratorio: " + this.laboratorio1
+            + " Parcial: " + this.parcial1
+        )
+    }
 
-    // public mostrarNotas(): void{
-    //     console.log("Laboratorio: " + this.laboratorio + " Parcial: " + this.parcial)
-    // }
+    public mostrarNotas(): void{
+        console.log("Laboratorio: " + this.laboratorio1 + " Parcial: " + this.parcial1)
+    }
 
     public notasCalculo(): void{
         let prom1 = ((this.laboratorio1*0.6) + (this.parcial1*0.4))/3
@@ -51,8 +51,8 @@ class Redes{
 
 //Objeto instanciado a POO
 let estudiante1 = new POO('U20250664', 'christian', 19, 10, 10, 10, 10, 10, 10);
-// estudiante1.mostrarDatos();
-// estudiante1.mostrarNotas();
+estudiante1.mostrarDatos();
+estudiante1.mostrarNotas();
 estudiante1.notasCalculo()
 
 //Objeto instanciado a Redes
