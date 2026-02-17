@@ -121,3 +121,19 @@ const e = new Gerente("Juan", 1500);
 console.log(e.bono())
 
 
+//Ejercicio 4
+
+class Sistema {
+  verificarRol(rol: string): string {
+    switch (rol) {
+      case "admin":
+        return "Acceso total";
+      case "editor":
+        return "Acceso limitado";
+      case "usuario":
+        return "Acceso básico";
+      default:
+        return "Rol no válido";
+    }
+  }
+}
