@@ -48,48 +48,48 @@
 
 import * as readline from "readline";
 
-class programa{
-    private rl: readline.Interface;
+// class programa{
+//     private rl: readline.Interface;
 
-    constructor() {
-        this.rl = readline.createInterface({
-            input: process.stdin,
-            output: process.stdout
-        })
-    }
+//     constructor() {
+//         this.rl = readline.createInterface({
+//             input: process.stdin,
+//             output: process.stdout
+//         })
+//     }
 
-    iniciar(): void{
-        this.perdirNota()
-    }
+//     iniciar(): void{
+//         this.perdirNota()
+//     }
 
-    perdirNota(): void {
-        this.rl.question("Ingrese nota del estudiante: ", (nota: string) => {
-            const numero = Number(nota)
+//     perdirNota(): void {
+//         this.rl.question("Ingrese nota del estudiante: ", (nota: string) => {
+//             const numero = Number(nota)
 
-            this.evaluarNota(numero);
-            this.cerrar()
-        });
-    }
+//             this.evaluarNota(numero);
+//             this.cerrar()
+//         });
+//     }
 
-    evaluarNota(nota: number): void {
-        if (nota >= 9 && nota >= 10) {
-            console.log("Excelente")
-        }else if (nota >= 7 && nota >= 8.9) {
-            console.log("Excelente")
-        }else if (nota >= 6 && nota >= 6.9) {
-            console.log("Excelente")
-        }else {
-            console.log("Reprobado")
-        }
-    }
+//     evaluarNota(nota: number): void {
+//         if (nota >= 9 && nota >= 10) {
+//             console.log("Excelente")
+//         }else if (nota >= 7 && nota >= 8.9) {
+//             console.log("Excelente")
+//         }else if (nota >= 6 && nota >= 6.9) {
+//             console.log("Excelente")
+//         }else {
+//             console.log("Reprobado")
+//         }
+//     }
 
-    cerrar(): void{
-        this.rl.close()
-    }
-}
+//     cerrar(): void{
+//         this.rl.close()
+//     }
+// }
 
-const app= new programa()
-app.iniciar()
+// const app= new programa()
+// app.iniciar()
 
 
 //Ejercicio 2

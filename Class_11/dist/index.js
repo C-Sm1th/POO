@@ -36,7 +36,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // app.iniciar()
 ///Ejercicios Clase
 //Ejercicio 1
-// import * as readline from "readline";
+const readline = require("readline");
 // class programa{
 //     private rl: readline.Interface;
 //     constructor() {
@@ -73,10 +73,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // const app= new programa()
 // app.iniciar()
 //Ejercicio 2
-const readline = require("readline");
 class sistema {
     constructor() {
-        this.usuario1 = "gatito";
         this.rl = readline.createInterface({
             input: process.stdin,
             output: process.stdout
