@@ -1,45 +1,45 @@
 // import * as readline from "readline";
 
-// class programa{
-//     private rl: readline.Interface;
+class programa{
+    private rl: readline.Interface;
 
-//     constructor() {
-//         this.rl = readline.createInterface({
-//             input: process.stdin,
-//             output: process.stdout
-//         })
-//     }
+    constructor() {
+        this.rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        })
+    }
 
-//     iniciar(): void{
-//         this.perdirNumero()
-//     }
+    iniciar(): void{
+        this.perdirNumero()
+    }
 
-//     perdirNumero(): void {
-//         this.rl.question("INgresa un numero: ", (respuesta: string) => {
-//             const numero = Number(respuesta)
+    perdirNumero(): void {
+        this.rl.question("INgresa un numero: ", (respuesta: string) => {
+            const numero = Number(respuesta)
 
-//             this.evaluarNumero(numero);
-//             this.cerrar()
-//         });
-//     }
+            this.evaluarNumero(numero);
+            this.cerrar()
+        });
+    }
 
-//     evaluarNumero(numero: number): void {
-//         if (numero > 10) {
-//             console.log("es mayor que 10")
-//         }else if (numero === 10) {
-//             console.log("es igual que 10")
-//         }else {
-//             console.log("es menor que 10")
-//         }
-//     }
+    evaluarNumero(numero: number): void {
+        if (numero > 10) {
+            console.log("es mayor que 10")
+        }else if (numero === 10) {
+            console.log("es igual que 10")
+        }else {
+            console.log("es menor que 10")
+        }
+    }
 
-//     cerrar(): void{
-//         this.rl.close()
-//     }
-// }
+    cerrar(): void{
+        this.rl.close()
+    }
+}
 
-// const app= new programa()
-// app.iniciar()
+const app= new programa()
+app.iniciar()
 
 
 ///Ejercicios Clase

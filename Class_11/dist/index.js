@@ -1,39 +1,40 @@
 "use strict";
 // import * as readline from "readline";
 Object.defineProperty(exports, "__esModule", { value: true });
-// class programa{
-//     private rl: readline.Interface;
-//     constructor() {
-//         this.rl = readline.createInterface({
-//             input: process.stdin,
-//             output: process.stdout
-//         })
-//     }
-//     iniciar(): void{
-//         this.perdirNumero()
-//     }
-//     perdirNumero(): void {
-//         this.rl.question("INgresa un numero: ", (respuesta: string) => {
-//             const numero = Number(respuesta)
-//             this.evaluarNumero(numero);
-//             this.cerrar()
-//         });
-//     }
-//     evaluarNumero(numero: number): void {
-//         if (numero > 10) {
-//             console.log("es mayor que 10")
-//         }else if (numero === 10) {
-//             console.log("es igual que 10")
-//         }else {
-//             console.log("es menor que 10")
-//         }
-//     }
-//     cerrar(): void{
-//         this.rl.close()
-//     }
-// }
-// const app= new programa()
-// app.iniciar()
+class programa {
+    constructor() {
+        this.rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+    }
+    iniciar() {
+        this.perdirNumero();
+    }
+    perdirNumero() {
+        this.rl.question("INgresa un numero: ", (respuesta) => {
+            const numero = Number(respuesta);
+            this.evaluarNumero(numero);
+            this.cerrar();
+        });
+    }
+    evaluarNumero(numero) {
+        if (numero > 10) {
+            console.log("es mayor que 10");
+        }
+        else if (numero === 10) {
+            console.log("es igual que 10");
+        }
+        else {
+            console.log("es menor que 10");
+        }
+    }
+    cerrar() {
+        this.rl.close();
+    }
+}
+const app = new programa();
+app.iniciar();
 ///Ejercicios Clase
 //Ejercicio 1
 const readline = require("readline");
